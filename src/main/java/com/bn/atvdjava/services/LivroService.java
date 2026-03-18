@@ -13,7 +13,7 @@ public class LivroService {
     @Autowired
     private LivroRepository livroRepository;
 
-    public LivroModel criarLivros(LivroModel livroModel) {
+    public LivroModel criarLivro(LivroModel livroModel) {
         return livroRepository.save(livroModel);
     }
 
