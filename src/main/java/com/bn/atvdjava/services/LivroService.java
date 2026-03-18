@@ -5,6 +5,7 @@ import com.bn.atvdjava.repositories.LivroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -21,15 +22,12 @@ public class LivroService {
         return livroRepository.findAll();
     }
 
+    public LivroModel procurarPorId(Long id) {
+        return livroRepository.findById(id).get();
+    }
+
     public void deletarLivro(Long id) {
         livroRepository.deleteById(id);
     }
 
-    public LivroModel atualizarLivro(Long id, LivroModel pordutoModel) {
-        LivroModel newLivroModel = livroRepository.findById(id).get();
-        newLivroModel.setTitulo(pordutoModel.getTitulo());
-        newLivroModel.setAutor(pordutoModel.getAutor());
-        newLivroModel.setAnoPublicacao(pordutoModel.getAnoPublicacao());
-        return livroRepository.save(newLivroModel);
-    }
 }
