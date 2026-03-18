@@ -13,19 +13,19 @@ public class LivroService {
     @Autowired
     private LivroRepository livroRepository;
 
-    public LivroModel criarProduto(LivroModel livroModel) {
+    public LivroModel criarLivros(LivroModel livroModel) {
         return livroRepository.save(livroModel);
     }
 
-    public List<LivroModel> listarProdutos() {
+    public List<LivroModel> listarLivros() {
         return livroRepository.findAll();
     }
 
-    public void deletarPorduto(Long id) {
+    public void deletarLivro(Long id) {
         livroRepository.deleteById(id);
     }
 
-    public LivroModel atualizarproduto(Long id, LivroModel pordutoModel) {
+    public LivroModel atualizarLivro(Long id, LivroModel pordutoModel) {
         LivroModel newLivroModel = livroRepository.findById(id).get();
         newLivroModel.setTitulo(pordutoModel.getTitulo());
         newLivroModel.setAutor(pordutoModel.getAutor());
