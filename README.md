@@ -1,4 +1,4 @@
-# API de Gerenciamento de Clientes
+# API de Gerenciamento de Livro
 
 Serviço RESTful criado com **Spring Boot** para gerenciar os dados de clientes. O projeto exercita a construção de uma estrutura em camadas (Model, Repository, Service, Controller) e o mapeamento JPA com múltiplos campos de texto (Nome, E-mail, Telefone).
 
