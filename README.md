@@ -1,6 +1,6 @@
 # API de Gerenciamento de Livro
 
-Serviço RESTful criado com **Spring Boot** para gerenciar os dados de clientes. O projeto exercita a construção de uma estrutura em camadas (Model, Repository, Service, Controller) e o mapeamento JPA com múltiplos campos de texto (Nome, E-mail, Telefone).
+Serviço RESTful criado com **Spring Boot** para gerenciar os dados de Livros. O projeto exercita a construção de uma estrutura em camadas (Model, Repository, Service, Controller) e o mapeamento JPA com múltiplos campos de texto.
 
 ## 🚀 Tecnologias Utilizadas
 * Java
@@ -12,10 +12,10 @@ Serviço RESTful criado com **Spring Boot** para gerenciar os dados de clientes.
 
 A API expõe os seguintes endpoints na rota base `/Livros`:
 
-* `POST /Livros`: Cria um novo cliente.
-* `GET /Livros`: Lista todos os clientes cadastrados.
-* `GET /Livros/{id}`: Busca um cliente específico pelo seu ID.
-* `DELETE /Livros/{id}`: Deleta um cliente específico pelo seu ID.
+* `POST /Livros`: Cria um novo Livro.
+* `GET /Livros`: Lista todos os Livros cadastrados.
+* `GET /Livros/{id}`: Busca um Livro específico pelo seu ID.
+* `DELETE /Livros/{id}`: Deleta um Livro específico pelo seu ID.
 
 ## 👥 Contribuidores
 
