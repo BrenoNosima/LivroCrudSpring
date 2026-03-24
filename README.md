@@ -10,12 +10,12 @@ Serviço RESTful criado com **Spring Boot** para gerenciar os dados de clientes.
 
 ## 📌 Endpoints da API
 
-A API expõe os seguintes endpoints na rota base `/clientes`:
+A API expõe os seguintes endpoints na rota base `/Livros`:
 
-* `POST /clientes`: Cria um novo cliente.
-* `GET /clientes`: Lista todos os clientes cadastrados.
-* `GET /clientes/{id}`: Busca um cliente específico pelo seu ID.
-* `DELETE /clientes/{id}`: Deleta um cliente específico pelo seu ID.
+* `POST /Livros`: Cria um novo cliente.
+* `GET /Livros`: Lista todos os clientes cadastrados.
+* `GET /Livros/{id}`: Busca um cliente específico pelo seu ID.
+* `DELETE /Livros/{id}`: Deleta um cliente específico pelo seu ID.
 
 ## 👥 Contribuidores
 
